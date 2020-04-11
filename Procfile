@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath designscorecard designscorecard.wsgi --log-file -
