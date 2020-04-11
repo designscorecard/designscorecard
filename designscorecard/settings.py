@@ -121,9 +121,9 @@ USE_TZ = True
 # STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'main/static'),
-# )
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'main/static'),
+)
 
 # # The user-generated content is managed separately,
 # # content that is uploaded by the website users.
