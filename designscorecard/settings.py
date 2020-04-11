@@ -25,7 +25,7 @@ SECRET_KEY = '9=oicv=@&6fdpoc0h@zf62(+2-uk%#u=+$+&3&o0ki23=_iw8b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['designscorecard.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -118,15 +118,30 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'main/static'),
+# )
+
+# # The user-generated content is managed separately,
+# # content that is uploaded by the website users.
+
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'main/static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
-# The user-generated content is managed separately,
-# content that is uploaded by the website users.
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
