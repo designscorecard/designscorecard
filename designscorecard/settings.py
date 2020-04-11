@@ -25,7 +25,7 @@ SECRET_KEY = '9=oicv=@&6fdpoc0h@zf62(+2-uk%#u=+$+&3&o0ki23=_iw8b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['designscorecard.herokuapp.com']
 
 
 # Application definition
