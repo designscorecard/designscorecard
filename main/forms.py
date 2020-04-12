@@ -23,7 +23,7 @@ class ContactForm(forms.Form):
         send_mail(
         "Site message",
             message,
-            "site@designscorecard.com",
+            "nolatoye@instincthub.com",
             ["nolatoye@instincthub.com"],
             fail_silently=False,
         )
