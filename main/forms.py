@@ -24,6 +24,6 @@ class ContactForm(forms.Form):
         "Site message",
             message,
             "site@designscorecard.com",
-            ["designscorecard@gmail.com"],
+            ["nolatoye@instincthub.com"],
             fail_silently=False,
         )
