@@ -418,11 +418,11 @@ hr {
 }
 .owl-carousel:hover .owl-nav div:hover {
   color: #fff;
-  background: #ff3500;
+  background: #f27420;
 }
 
 .btn {
-  background: #ff5959;
+  background: #ff3500;
   -moz-user-select: none;
   text-transform: capitalize;
   color: #fff;
@@ -450,7 +450,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #da1276;
+  background: #085f63;
   z-index: 1;
   border-radius: 5px;
   transition: transform 0.5s;
@@ -464,6 +464,26 @@ hr {
   transform: scaleX(1);
   color: #fff !important;
   z-index: -1;
+}
+
+.challenge-btn .download-instruction {
+  background-color: #7e7e7e;
+  color: white;
+}
+
+.contact-cta {
+  background-color: #555;
+  padding: 100px 0;
+}
+.contact-cta .contact-header {
+  font-size: 2em;
+  line-height: 1.3em;
+}
+.contact-cta p, .contact-cta h3 {
+  color: white;
+}
+.contact-cta .contact-details {
+  margin-left: auto;
 }
 
 .header-btn {
@@ -565,7 +585,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  background: #e6373d;
+  background: #dca73a;
   color: #085f63;
   z-index: -1;
   transition: transform 0.5s;
@@ -578,7 +598,7 @@ hr {
 .send-btn:hover::before {
   transform: scaleY(1);
   order: 2px solid transparent;
-  color: red;
+  color: #dca73a;
 }
 
 /* button style */
@@ -2136,11 +2156,11 @@ hr {
 }
 
 .inner-padding {
-  padding-top: 450px;
+  padding-top: 300px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .inner-padding {
-    padding-top: 400px;
+    padding-top: 200px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

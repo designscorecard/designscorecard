@@ -94,6 +94,8 @@ button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 	text-transform: uppercase;
 }
 
+
+
 input:focus::-moz-placeholder {
 	opacity: 0;
 	-webkit-transition: .4s;
@@ -238,7 +240,7 @@ hr {
 				visibility: visible;
 				&:hover{
 					color: #fff;
-					background: $theme-color4;
+					background: $theme-color3;
 				}
 			}
 		}
@@ -247,7 +249,7 @@ hr {
 
 
 .btn {
-		background: #ff5959;
+		background: $theme-color4;
 		-moz-user-select: none;
 		text-transform: capitalize;
 		color: #fff;
@@ -275,7 +277,7 @@ hr {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background:#da1276;
+		background: $theme-color;
 		z-index: 1;
 		border-radius: 5px;
 		transition: transform 0.5s;
@@ -292,8 +294,29 @@ hr {
 	z-index: -1;
 }
 
+.challenge-btn .download-instruction{
+	background-color: $black-soft;
+	color: white;
+}
 
 
+// Contact CTA
+
+.contact-cta{
+	background-color: $body-text-color;
+	
+	padding: 100px 0;
+	.contact-header{
+		font-size: 2em;
+		line-height: 1.3em;
+	}
+	p, h3{
+		color: white;
+	}
+	.contact-details{
+		margin-left: auto;
+	}
+}
 
 // other
 .header-btn{
@@ -399,7 +422,7 @@ hr {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background:#e6373d;
+		background:$btn_hover;
 		color:$theme_color;
 		z-index: -1;
 		transition: transform 0.5s;
@@ -413,7 +436,7 @@ hr {
 .send-btn:hover::before {
 	transform: scaleY(1);
 	order: 2px solid transparent;
-	color:red;
+	color:$btn_hover;
 
 }
 
@@ -725,9 +748,9 @@ hr {
 	}
 
 	.inner-padding{
-		padding-top: 450px;
+		padding-top: 300px;
 		@media #{$laptop}{
-			padding-top: 400px;
+			padding-top: 200px;
 		}
 		@media #{$lg}{
 			padding-top: 300px;
