@@ -57,6 +57,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    # SecurityMiddleware must be listed before other middleware
+    'django.middleware.security.SecurityMiddleware',
     # Simplified static file serving.
     # https://warehouse.python.org/project/whitenoise/
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -68,6 +70,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
 
 ROOT_URLCONF = 'designscorecard.urls'
 
