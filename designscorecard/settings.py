@@ -38,7 +38,10 @@ else:
         "django.core.mail.backends.console.EmailBackend"
     )
 
-ALLOWED_HOSTS = ['*']
+if not DEBUG:
+    ALLOWED_HOSTS = ['designscorecard.com', 'www.designscorecard.com']
+else:
+    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
