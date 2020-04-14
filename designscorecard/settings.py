@@ -39,7 +39,7 @@ else:
     )
 
 if not DEBUG:
-    ALLOWED_HOSTS = ['designscorecard.com', 'www.designscorecard.com']
+    ALLOWED_HOSTS = ['designscorecard.com']
 else:
     ALLOWED_HOSTS = ['*']
 
