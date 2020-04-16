@@ -165,7 +165,7 @@
 
 /* 1. Theme default css */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -185,7 +185,7 @@ h6 {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #707b8e;
   font-size: 16px;
   line-height: 30px;
@@ -469,6 +469,28 @@ hr {
 .challenge-btn .download-instruction {
   background-color: #7e7e7e;
   color: white;
+}
+
+.covid-19 h3 {
+  font-size: 1.5em;
+  margin: 50px 0;
+  color: white;
+}
+
+.concept-btn, .register-btn, .download-instruction {
+  margin-bottom: 40px;
+}
+
+.register-btn {
+  background-color: #3b6978;
+}
+
+.concept-btn {
+  background-color: #18b0b0;
+}
+
+.covid-19-desc {
+  padding: 100px 0;
 }
 
 .contact-cta {
@@ -5915,8 +5937,8 @@ z .slider-area .hero-cap h2 {
 
 .available-app-area {
   position: relative;
-  padding-top: 220px;
-  padding-bottom: 220px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .available-app-area {
