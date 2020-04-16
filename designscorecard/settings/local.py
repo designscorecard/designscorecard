@@ -24,3 +24,4 @@ EMAIL_BACKEND = (
 
 
 ALLOWED_HOSTS = ['*']
+
