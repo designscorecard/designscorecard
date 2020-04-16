@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900|Poppins:300,400,500,600,700,800,900&display=swap');
  body {
-	font-family: $font_2;
+	font-family: $font_1;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -25,7 +25,7 @@ h6 {
 	text-transform: normal;
 }
 p {
-	font-family:$font_2;
+	font-family:$font_1;
 	color: $font_color1;
 
 	font-size: 16px;
@@ -297,6 +297,27 @@ hr {
 .challenge-btn .download-instruction{
 	background-color: $black-soft;
 	color: white;
+}
+
+.covid-19 h3{
+	font-size: 1.5em;
+	margin: 50px 0;
+	color: white;
+}
+
+.concept-btn, .register-btn, .download-instruction{
+	margin-bottom: 40px;
+}
+.register-btn{
+	background-color: #3b6978;
+}
+.concept-btn{
+	background-color: #18b0b0;
+}
+
+.covid-19-desc{
+	padding: 100px 0;
+	
 }
 
 
