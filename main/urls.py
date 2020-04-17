@@ -20,7 +20,7 @@ urlpatterns = [
     ),
 
     path(
-    "design_challenge/",
-    TemplateView.as_view(template_name="design_challenge.html"),
-    name="design_challenge",),
+    "design-thinking-challenge/",
+    TemplateView.as_view(template_name="design-thinking-challenge.html"),
+    name="design-thinking-challenge",),
 ]

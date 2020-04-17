@@ -33,15 +33,17 @@ if not DEBUG:
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
     EMAIL_HOST_PASSWORD = "password"
+
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = True
+    ALLOWED_HOSTS = ['designscorecard.com', 'www.designscorecard.com']
 else:
     EMAIL_BACKEND = (
         "django.core.mail.backends.console.EmailBackend"
     )
-
-if not DEBUG:
-    ALLOWED_HOSTS = ['designscorecard.com', 'www.designscorecard.com']
-else:
     ALLOWED_HOSTS = ['*']
+    SECURE_SSL_REDIRECT = False
+    
 
 
 # Application definition
@@ -71,8 +73,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
+
 
 ROOT_URLCONF = 'designscorecard.urls'
 
